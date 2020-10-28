@@ -110,3 +110,5 @@ const data = [
         "correct": "Perform transactions in Latin"
     }
 ]
+
+export default data;

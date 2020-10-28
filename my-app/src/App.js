@@ -8,7 +8,9 @@ function App() {
   // const [score, setScore] = useState([])
 
   return (
-    <div styles={{ backgroundImage: `url(${spaceBackground})` }}>
+    // style = {{ backgroundImage: 'url(' + require('./images/sword.png') + ')' }
+// }
+    <div styles={{ backgroundImage: `url( ${spaceBackground})` }}>
       <Header />
       <QuestionContainer />
     </div>
