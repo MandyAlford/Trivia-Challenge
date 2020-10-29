@@ -22,23 +22,12 @@ function GameContainer() {
 
     const [questions, setQuestionBank] = useState(getQuestions());
 
-    // const updateCurrentQuestion = ()=> {
-    //     return setCurrentQuestion(currentQuestion = questions[counter])
-    // }
-
-
     const [counter, setCounter] = useState(0);
-    // const [currentQuestion, setCurrentQuestion] = useState(questions[counter]);
-
-    // useEffect(() => {
-    //     getQuestions()
-    // }, [])
-
 
     return (
         <div className='GameContainer'>
             <h1>{questions[counter].question}</h1>
-            <AnswerContainer />
+            <AnswerContainer incorrectAnswers={questions[counter].incorrect} correctAnswer={questions[counter].correct}/>
         </div>
     );
 }
