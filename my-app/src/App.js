@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import './App.css';
 import Header from './Header';
-import QuestionContainer from './QuestionContainer';
+import GameContainer from './GameContainer';
 import spaceBackground from './imgs/space-background.jpg';
 
 function App() {
@@ -12,7 +12,7 @@ function App() {
 // }
     <div styles={{ backgroundImage: `url( ${spaceBackground})` }}>
       <Header />
-      <QuestionContainer />
+      <GameContainer />
     </div>
   );
 }

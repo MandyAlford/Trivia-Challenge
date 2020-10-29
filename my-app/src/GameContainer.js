@@ -1,7 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import data from './data';
+import AnswerContainer from './AnswerContainer';
 
-function QuestionContainer() {
+function GameContainer() {
        
     function getQuestions() {
         let result = [];
@@ -33,11 +34,13 @@ function QuestionContainer() {
     //     getQuestions()
     // }, [])
 
+
     return (
-        <div className='QuestionContainer'>
+        <div className='GameContainer'>
             <h1>{questions[counter].question}</h1>
+            <AnswerContainer />
         </div>
     );
 }
 
-export default QuestionContainer;
+export default GameContainer;
