@@ -1,15 +1,11 @@
-import React, { useState, useEffect } from 'react';
+import React  from 'react';
 import Answer from './Answer';
 
 function AnswerContainer(props) {
-
-    // console.log(props.answers)
-//     let shuffledAnswers = props.incorrectAnswers.concat([props.correctAnswer]).sort()
-//    console.log(shuffledAnswers)
    let checkAnswer = (selectedAnswer, correctAnswer) => {
-    debugger
-    
-
+    if(selectedAnswer === correctAnswer){
+        return true
+    }
    }
 
     return (
